@@ -1,6 +1,11 @@
 node {
-    writeFile file: '../projectName', text: 'Generated for plugin.'
+    writeFile file: 'projectName', text: 'Generated for plugin.'
+    sh 'pwd'
     sh 'cd ..'
-    sh 'ls -l'
+    writeFile file: 'projectName', text: 'Generated for plugin.'
+    sh 'pwd'
+    sh 'ls -laht'
+    sh 'pwd'
     sh 'cat projectName'
+    sh 'pwd'
 }
